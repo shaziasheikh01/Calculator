@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;    /* include padding and margin in total width or height*/ 
+    
+}
+/* disable scrolling on body */
+body{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.heading{
+    background-color:#C88EA7;
+    display: flex;            /* for laying out a collection of item in one direction or another direction*/
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+.text-heading{
+    margin-top: 30px;
+    margin-bottom: -30px;
+    font-style: italic;
+    font-size: 40px;
+    color: #cc3275;
+    text-shadow: 2px 2px 2px #643843;
+   
+    
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color:#C88EA7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    
+}
+.calculator{
+    background-color:#643843 ;
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator form input{
+    border:0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin : 10px;
+}
+form .display{
+    display: flex;
+    justify-content:flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    text-align: right;
+    flex:1;
+    font-size: 20px;
+    box-shadow: none;
+}
+form input.equal{
+    width: 145px;;
+}
+form input.operator{
+    color:#cc3275;
+    font-weight: bold;
+}
+ 
